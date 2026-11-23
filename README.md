@@ -241,6 +241,17 @@ Our biggest assumption is that **OPD staff will tap `CALL NEXT` every time.** If
 
 ---
 
+## 📦 Submission files
+
+| File | What it is |
+|---|---|
+| 🎥 [`OPD-Saathi-Concept-Video.mp4`](submission/OPD-Saathi-Concept-Video.mp4) | 68-second concept film of one complete patient journey (all screens are mockups) |
+| 📊 [`OPD-Saathi-Team-Neural-Knights.pdf`](submission/OPD-Saathi-Team-Neural-Knights.pdf) | 8-slide pitch deck (PDF) |
+| 🖥️ [`OPD-Saathi-Team-Neural-Knights.pptx`](submission/OPD-Saathi-Team-Neural-Knights.pptx) | Same deck, editable PowerPoint |
+| 📄 [`docs/problem-brief.md`](docs/problem-brief.md) | Problem brief: user, numbers with sources, alternatives, assumptions |
+
+---
+
 <div align="center">
 
 ### 🛡️ Built by Team Neural Knights
