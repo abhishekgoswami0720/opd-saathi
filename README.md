@@ -97,12 +97,28 @@ They can step away for water, food or the toilet without fear of losing their pl
 </tr>
 </table>
 
+### 🧩 The full journey: from booking at home to the last counter
+
+OPD Saathi is one **voice-first** journey. Each module below hands off to the next.
+
+| | Module | What it does for the patient | Hackathon build |
+|:---:|---|---|:---:|
+| 🗣️ | **Multilingual voice assistant** | Book an OPD visit by **missed call or IVR** in Hindi, Bhojpuri and more, then track the appointment by SMS and voice call, all on a keypad phone | ✅ Build |
+| 🧑‍⚕️ | **Patient & queue management** | Registration screen plus a one-tap room screen. Every tap moves the journey forward and triggers the next message | ✅ Build |
+| 🤝 | **ASHA referral link** | A village ASHA worker refers and pre-books a patient, so the hospital knows they're coming | 🧪 Mockup |
+| 💳 | **Ayushman card hospitals** | When a doctor refers a patient for admission or surgery, an SMS lists nearby hospitals that accept the Ayushman card, plus the Ayushman desk location | 🧪 Mockup |
+
+> [!IMPORTANT]
+> **Privacy by design.** OPD Saathi stores **journey data only**: token, phone, language and stops. It stores **no medical records**. Anything clinical goes through ABHA and ABDM's consent-based exchange, in line with India's DPDP Act and Rules.
+
 ---
 
 ## ⚙️ How it works
 
 ```mermaid
 flowchart LR
+    V["🗣️ Voice booking<br/>missed call / IVR from home"] --> B
+    H["🤝 ASHA referral<br/>(mockup)"] -.-> B
     A["🏥 Registration counter<br/>phone · language · department"] --> B[("OPD Saathi<br/>journey + queue engine")]
     S["👩‍⚕️ Room staff<br/>CALL NEXT · ADD NEXT STOP"] --> B
     B --> C["💬 SMS<br/>where to go"]
@@ -110,6 +126,8 @@ flowchart LR
     B --> E["📺 Room display<br/>token now serving"]
     C --> P["🧍 Patient on<br/>any phone"]
     D --> P
+    B -.-> Y["💳 Ayushman hospitals SMS<br/>on referral (mockup)"]
+    Y -.-> P
     P -->|walks to the right room,<br/>at the right time| S
 ```
 
@@ -127,6 +145,8 @@ sequenceDiagram
     participant D as 👩‍⚕️ OPD Room 14
     participant L as 🧪 Lab
 
+    P->>O: 📞 Missed call → IVR: "Medicine OPD, Hindi"
+    O-->>P: SMS: Booked for Mon · report to counter 3
     R->>O: Token 45 · phone · Hindi · Medicine
     O-->>P: SMS: Bldg B, Floor 2, Room 14 (12 ahead)
     D->>O: CALL NEXT (token 42)
@@ -155,6 +175,7 @@ AIIMS Delhi already has a good navigation app, **[AIIMS Disha](https://www.tribu
 
 | | Ask a guard / signs | AIIMS Disha | ABHA Scan & Share | **OPD Saathi** |
 |---|:---:|:---:|:---:|:---:|
+| **Book a visit** by phone call | ❌ | ❌ | ❌ registration only | ✅ missed call / IVR |
 | Answers *"where is the lab?"* | 🟡 if you find someone | ✅ | ❌ | ✅ by SMS |
 | Answers *"when is my turn?"* | ❌ | ❌ not in launch reports | ❌ | ✅ |
 | Answers *"what do I do next?"* | 🟡 | ❌ | ❌ | ✅ |
@@ -188,6 +209,8 @@ No beacons, no app store and no new habit for patients are needed. If one hospit
 > [!NOTE]
 > **Honest status:** we picked this problem on 23 Nov 2026. This repo is where the build happens, and everything below is being built now.
 
+**Phase 1: hackathon build**
+- [ ] Voice booking by missed call / IVR in Hindi (hospital booking API simulated)
 - [ ] Journey + queue data model (patients, stops, rooms, tokens)
 - [ ] Registration screen for clerks
 - [ ] One-tap room screen: `CALL NEXT` · `ADD NEXT STOP`
@@ -195,7 +218,14 @@ No beacons, no app store and no new habit for patients are needed. If one hospit
 - [ ] Turn-near voice call, with a simulated fallback for the live demo
 - [ ] Missed-turn and failed-delivery recovery
 - [ ] Demo seed data modelled on a real hospital layout
-- [ ] Demo video
+- [ ] Clickable mockups: ASHA referral screen · Ayushman hospital SMS
+- [x] Demo video (concept)
+
+**Phase 2: after the hackathon**
+- [ ] ASHA referral link: ASHA workers pre-book and refer through the same voice flow
+- [ ] Ayushman card: live list of empanelled hospitals from official PM-JAY data, sent at referral time
+- [ ] ABHA / ABDM consent-based linking for clinical records (we never store them ourselves)
+- [ ] Bhojpuri, Bengali, Tamil and more voice prompts, recorded by native speakers
 
 **Deliberately out of scope:** indoor maps and turn-by-turn directions. Disha already does that, and a text like *"Room 14, follow the GREEN line"* plus the hospital's own floor signs gets patients there.
 

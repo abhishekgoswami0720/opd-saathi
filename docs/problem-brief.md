@@ -1,7 +1,7 @@
 # OPD Saathi: Problem Brief (T2P3)
 
 Build for Bharat hackathon · Track 2: Healthcare and Well-being · Patient Navigation for Public Hospitals
-Last updated: 23 Nov 2026
+Last updated: 23 Nov 2026 (team additions in section 6)
 
 ## 1. The problem, in one scene
 
@@ -58,3 +58,16 @@ No savings demonstrated yet.
 ## 5. Riskiest assumption
 
 That OPD room staff will press "Call next" every time. **Test:** shadow one OPD room for about 3 hours with a paper "NEXT" tick card. If staff tick at least 8 of 10 calls unprompted, the assumption holds.
+
+## 6. Team additions (23 Nov 2026)
+
+| Module | Already exists | Our angle | Hackathon tier |
+|---|---|---|---|
+| Multilingual voice assistant: booking → appointment tracking | Online OPD booking via [ORS / eHospital](https://vmmc-sjh.mohfw.gov.in/online-registration-ors-opd) (smartphone or web) | Booking by missed call / IVR in local languages on a keypad phone, using the same voice channel as the turn alerts | Build |
+| Patient & queue management | Token displays in OPD rooms | One-tap staff screen that moves the journey forward and triggers messages | Build (core) |
+| ASHA referral link (team's "centralized data repo") | 10.4 lakh+ ASHAs ([govt factsheet via NewKerala, 2026](https://www.newkerala.com/news/a/over-1040-lakh-ashas-1058-lakh-anganwadi-workers-427.htm)); ABDM consent-based record exchange | ASHA pre-books and refers; we keep journey data only, and clinical records stay with ABHA / ABDM consent | Mockup → Phase 2 |
+| Ayushman-card hospitals | [PM-JAY hospital finder](https://www.business-standard.com/health/ayushman-bharat-hospitals-how-to-find-free-treatment-in-your-area-125042300210_1.html) | SMS of nearby empanelled hospitals at the moment of referral, with the Ayushman desk's location | Mockup → Phase 2 |
+
+**Caveats:**
+- PM-JAY generally does not cover outpatient consultations ([Bajaj Finserv summary](https://www.bajajfinserv.in/ayushman-card-hospital-list)), so the Ayushman feature is for admission and surgery referrals, not OPD visits.
+- DPDP Rules were notified in Nov 2025, with consent-manager registration in phase II, due Nov 2026 ([Chambers, 2026](https://chambers.com/practice-guides/guides/digital-healthcare-2026/india/trends-and-developments)). OPD Saathi stores no medical records.
