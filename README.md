@@ -16,6 +16,8 @@
 
 <br/>
 
+🎥 **[Watch the 68-second film](https://youtu.be/Brm_ZcYrs2M)** · 📝 **[Read the article](https://medium.com/@abhibarsana1/giving-a-hospital-token-a-voice-why-were-building-opd-saathi-for-keypad-phones-1f81ba83de84)** · 📊 **[Pitch deck (PDF)](submission/OPD-Saathi-Team-Neural-Knights.pdf)**
+
 [The problem](#-the-problem) · [The idea](#-the-idea-in-one-line) · [How it works](#-how-it-works) · [Why it's different](#-why-not-just-use-an-app) · [The bigger picture](#-the-bigger-picture) · [Roadmap](#-roadmap)
 
 </div>
@@ -63,8 +65,8 @@ No app. No internet. No smartphone. Just the keypad phone that **~250–300 mill
 <tr>
 <td width="33%" valign="top">
 
-### 🎫 1. Journey starts at the counter
-The clerk enters the patient's phone number, language and department. Within a minute, an SMS arrives:
+### 🎫 1. Book by missed call, get directions
+Book from home by **missed call**. OPD Saathi calls back in Hindi: *press 2 for Medicine, 1 for Monday*. Walk-ins register at the counter instead. On arrival, an SMS arrives:
 
 ```
 Token 45 · Medicine OPD
@@ -219,7 +221,7 @@ No beacons, no app store and no new habit for patients are needed. If one hospit
 - [ ] Missed-turn and failed-delivery recovery
 - [ ] Demo seed data modelled on a real hospital layout
 - [ ] Clickable mockups: ASHA referral screen · Ayushman hospital SMS
-- [x] Demo video (concept)
+- [x] Concept video, pitch deck, article and launch posts
 
 **Phase 2: after the hackathon**
 - [ ] ASHA referral link: ASHA workers pre-book and refer through the same voice flow
@@ -245,10 +247,12 @@ Our biggest assumption is that **OPD staff will tap `CALL NEXT` every time.** If
 
 | File | What it is |
 |---|---|
-| 🎥 [`OPD-Saathi-Concept-Video.mp4`](submission/OPD-Saathi-Concept-Video.mp4) | 68-second concept film of one complete patient journey (all screens are mockups) |
+| 🎥 [YouTube](https://youtu.be/Brm_ZcYrs2M) · [`OPD-Saathi-Concept-Video.mp4`](submission/OPD-Saathi-Concept-Video.mp4) | 68-second concept film of one complete patient journey (all screens are mockups) |
 | 📊 [`OPD-Saathi-Team-Neural-Knights.pdf`](submission/OPD-Saathi-Team-Neural-Knights.pdf) | 8-slide pitch deck (PDF) |
 | 🖥️ [`OPD-Saathi-Team-Neural-Knights.pptx`](submission/OPD-Saathi-Team-Neural-Knights.pptx) | Same deck, editable PowerPoint |
 | 📄 [`docs/problem-brief.md`](docs/problem-brief.md) | Problem brief: user, numbers with sources, alternatives, assumptions |
+| 📝 [Medium article](https://medium.com/@abhibarsana1/giving-a-hospital-token-a-voice-why-were-building-opd-saathi-for-keypad-phones-1f81ba83de84) | Why we're building OPD Saathi for keypad phones |
+| 💼 [LinkedIn post](https://lnkd.in/p/dc33ZAnV) · 💬 [Reddit post](https://www.reddit.com/r/AIIMSdelhi/s/ggwmarZcwv) | Launch post, and a call for real hospital stories and feedback |
 
 ---
 

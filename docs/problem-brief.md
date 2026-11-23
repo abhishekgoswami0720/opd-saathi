@@ -71,3 +71,11 @@ That OPD room staff will press "Call next" every time. **Test:** shadow one OPD 
 **Caveats:**
 - PM-JAY generally does not cover outpatient consultations ([Bajaj Finserv summary](https://www.bajajfinserv.in/ayushman-card-hospital-list)), so the Ayushman feature is for admission and surgery referrals, not OPD visits.
 - DPDP Rules were notified in Nov 2025, with consent-manager registration in phase II, due Nov 2026 ([Chambers, 2026](https://chambers.com/practice-guides/guides/digital-healthcare-2026/india/trends-and-developments)). OPD Saathi stores no medical records.
+
+## 7. Submission links
+
+- Video: https://youtu.be/Brm_ZcYrs2M
+- Pitch deck: [PDF](../submission/OPD-Saathi-Team-Neural-Knights.pdf) · [PPTX](../submission/OPD-Saathi-Team-Neural-Knights.pptx)
+- Article: https://medium.com/@abhibarsana1/giving-a-hospital-token-a-voice-why-were-building-opd-saathi-for-keypad-phones-1f81ba83de84
+- LinkedIn: https://lnkd.in/p/dc33ZAnV
+- Reddit: https://www.reddit.com/r/AIIMSdelhi/s/ggwmarZcwv
