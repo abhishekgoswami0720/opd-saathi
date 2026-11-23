@@ -243,9 +243,11 @@ Our biggest assumption is that **OPD staff will tap `CALL NEXT` every time.** If
 
 <div align="center">
 
-### 🤝 Built by
+### 🛡️ Built by Team Neural Knights
 
-**[Abhishek Goswami](https://www.linkedin.com/in/abhishekgoswami0720/)** · B.Tech CSE (AI/ML), GLA University · Founder, Let's Cook
+| Deepak | Akshat Gupta | Abhishek Goswami | Anirudh | Krishna Gupta |
+|:---:|:---:|:---:|:---:|:---:|
+| 👑 Team Leader | Member | [Member](https://www.linkedin.com/in/abhishekgoswami0720/) | Member | Member |
 
 <sub>Have you ever been lost in a government hospital? Open an issue and tell us what happened. Real stories shape what we build.</sub>
 
